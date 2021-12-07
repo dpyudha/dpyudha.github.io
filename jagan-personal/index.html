@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Personal Website</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    </head>
+    
+    <body data-barba="wrapper" class="min-h-screen bg-gray-100 relative">
+        <main data-barba="container" data-barba-namespace="home" class="md:h-screen overflow-hidden">
+            
+            <body data-barba="wrapper" class="min-h-screen bg-gray-100 relative">
+                <nav class="lg:p-11 md:p-11 p-7.5 absolute flex items-center z-50"> <a href="/" class="mr-5">
+        <svg
+          width="57"
+          height="57"
+          viewBox="0 0 57 57"
+          fill="none"
+          class="w-8 h-8 md:w-14 md:h-14"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="28.5" cy="28.5" r="28.5" fill="#342E3C" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M23.8845 20.0725C24.6335 20.0725 25.3037 20.0676 25.8953 20.0578V22.2542C25.8927 22.3519 25.8915 22.4549 25.8915 22.5631V31.4133V32.8883C25.8915 35.1613 25.7545 36.7733 25.4804 37.7244C25.1419 38.9012 24.4165 39.8523 23.3042 40.5777C22.208 41.3031 20.7732 41.6658 19 41.6658V41.1822C19.6771 41.1178 20.2332 40.9162 20.6685 40.5777C21.1198 40.2553 21.4584 39.7072 21.6841 38.9334C21.9259 38.1758 22.0468 37.136 22.0468 35.8141V22.5631C22.0468 21.9506 21.9984 21.5073 21.9017 21.2332C21.8211 20.9592 21.6518 20.7738 21.3939 20.6771C21.1521 20.5803 20.7652 20.5159 20.2332 20.4836V20C21.0392 20.0484 22.2563 20.0725 23.8845 20.0725ZM35.9535 37.1682L27.6167 26.6032V20.4241L36.6305 31.5342V23.9656C36.6305 23.0145 36.5822 22.3213 36.4855 21.8861C36.3887 21.4347 36.1792 21.1123 35.8568 20.9189C35.5343 20.7093 35.0104 20.5642 34.285 20.4836V20C34.9137 20.0484 35.7842 20.0725 36.8965 20.0725C37.7993 20.0725 38.5005 20.0484 39.0002 20V20.4836C38.4683 20.5642 38.0733 20.7012 37.8154 20.8947C37.5736 21.0881 37.4043 21.3944 37.3076 21.8135C37.227 22.2327 37.1867 22.8533 37.1867 23.6755V37.1682L36.6064 37.1441L35.9535 37.1682Z"
+            fill="white"
+          />
+        </svg>
+      </a>
+
+                    <button class="popup-toggle" data-target="popup"> <span class="icon-sound"></span>
+
+                    </button>
+                </nav>
+                <div class="fixed h-screen w-screen bg-white popup z-30" id="popup">
+                    <div class="p-11 flex items-center justify-center relative w-full h-full">
+                        <div class="text-right absolute top-9 md:top-20 right-7.5 md:right-11">
+                            <button class="text-sm btn-popup-close"> <span class="icon-close"></span>
+
+                            </button>
+                        </div>
+                        <div class="text-center">
+                            <!-- <svg width="280" height="84" viewBox="0 0 280 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1 42.8949C2.33333 44.3949 5.5 47.1949 7.5 46.3949C9.5 45.5949 14.3333 40.0615 16.5 37.3949C17.6667 35.7282 20.6 33.5949 23 38.3949C26 44.3949 28 57.3948 31.5 58.3948C35 59.3948 36.5 48.8948 37.5 41.8948C38.3 36.2948 40.1667 27.2282 41 23.3948C42 19.8948 44.5 14.7948 46.5 22.3948C48.5 29.9948 52 55.5615 53.5 67.3948C54 70.0615 55.4 74.9948 57 73.3948C58.6 71.7948 63.3333 34.0615 65.5 15.3948C66.1667 10.0615 68.1 1.79477 70.5 11.3948C72.9 20.9948 76.8333 58.0614 78.5 75.3948C79 78.5614 80.5 83.6948 82.5 78.8948C84.5 74.0948 88.6667 29.5614 90.5 7.89476C91.1667 3.72808 93 -2.60526 95 5.39476C97 13.3948 101.167 56.3948 103 76.8948C103.5 80.3948 105 85.7948 107 79.3948C109 72.9948 113.167 32.0614 115 12.3948C115.667 7.89476 117.5 1.09476 119.5 9.89476C121.5 18.6948 125.667 52.2281 127.5 67.8948C128.167 71.7281 130 77.2948 132 68.8948C134 60.4948 138.167 34.3948 140 22.3948C140.833 19.5614 142.9 15.8948 144.5 23.8948C146.1 31.8948 150.5 57.5614 152.5 69.3948C153.167 71.7281 154.9 74.9948 156.5 69.3948C158.1 63.7948 162.167 28.7281 164 11.8948C164.667 7.7281 166.5 1.39476 168.5 9.39476C170.5 17.3948 174.333 54.0614 176 71.3948C176.333 75.3948 177.5 83.0948 179.5 81.8948C182 80.3948 184 53.8948 184.5 47.3948C184.9 42.1948 187.667 17.5614 189 5.89476C189.5 2.56143 190.9 -2.40524 192.5 4.39476C194.1 11.1948 198.833 54.8948 201 75.8948C201.5 80.3948 203.1 87.0948 205.5 77.8948C207.9 68.6948 211.833 29.0614 213.5 10.3948C214 7.22811 215.4 2.19478 217 7.39478C218.6 12.5948 223.667 52.2281 226 71.3948C226.5 73.2281 227.9 75.8948 229.5 71.8948C231.1 67.8948 235.5 37.5614 237.5 22.8948C237.833 20.7281 239 16.6948 241 17.8948C243 19.0948 247.5 42.3948 249.5 53.8948C250.167 56.7281 252.1 61.0948 254.5 55.8948C256.9 50.6948 260.167 41.3948 261.5 37.3948C262.333 35.5614 264.8 32.8948 268 36.8948C272 41.8948 273 44.3948 279.5 43.8948"
+          stroke="#342E3C"
+          stroke-width="2"
+        />
+      </svg> -->
+                            <div id="wave"></div>
+                            <p class="md:text-lg text-black mt-10">Music brings emotion so turn on
+                                <br/>for your best experience.</p>
+                            <div class="toggle-switch mt-8">
+                                <input type="checkbox" name="music" id="music" />
+                                <label for="music"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:inline-block z-20 socials fixed top-1/2 transform -translate-y-1/2">
+                    <ul class="flex transform -rotate-180">
+                        <li> <a href="" class="text-lg text-gray-200 transition-all ease duration-200 hover:text-black">dribbble</a>
+
+                        </li>
+                        <li> <a href="" class="text-lg text-gray-200 transition-all ease duration-200 hover:text-black">behance</a>
+
+                        </li>
+                        <li> <a href="" class="text-lg text-gray-200 transition-all ease duration-200 hover:text-black">facebook</a>
+
+                        </li>
+                        <li> <a href="" class="text-lg text-gray-200 transition-all ease duration-200 hover:text-black">medium</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <button class="
+      font-serif
+      text-base
+      md:text-xl
+      absolute
+      top-9
+      right-7.5
+      md:top-20 md:right-11
+    "> <b>Say hi</b>
+
+                </button>
+                <section class="
+      px-7.5
+      md:pl-26 md:pr-11
+      flex
+      items-center
+      justify-between
+      flex-wrap flex-col-reverse
+      md:flex-row
+      pt-32
+      md:pt-0
+      pb-24
+      md:pb-0
+    ">
+                    <div class="w-full md:w-1/4 text-center md:text-left">
+                        <p class="
+          text-lg
+          md:text-xl
+          font-normal
+          leading-8
+          md:leading-9
+          home-title
+          opacity-0
+          mt-8
+        ">Hi, I’m Jagan Narayan,
+                            <br />a guy who loves designing,
+                            <br />writing and animating</p>
+                    </div>
+                    <div class="w-full md:w-2/3 md:pr-4">
+                        <img alt="illustration" class="h-full" src="/img/illustration.png" />
+                    </div>
+                </section>
+                <section class="
+      p-7.5
+      md:p-11
+      fixed
+      flex
+      items-center
+      justify-between
+      bottom-0
+      left-0
+      w-full
+    ">
+                    <button class="font-serif text-base md:text-xl"><b>My Work</b>
+                    </button> <a href="/blog.html" class="font-serif text-base md:text-xl"><b>My Blog</b></a>
+
+                </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+        <script src="./js/scripts.js"></script>
+        </body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Personal Website</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    </head>
+    
+    <body data-barba="wrapper" class="min-h-screen bg-gray-100 relative">
+        <main data-barba="container" data-barba-namespace="blog">
+            <nav class="lg:p-11 md:p-11 p-7.5 relative flex items-start z-50 w-full">
+                <div class="flex items-center"> <a href="/" class="mr-5">
+      <svg
+        width="57"
+        height="57"
+        viewBox="0 0 57 57"
+        fill="none"
+        class="w-8 h-8 md:w-14 md:h-14"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="28.5" cy="28.5" r="28.5" fill="#342E3C" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M23.8845 20.0725C24.6335 20.0725 25.3037 20.0676 25.8953 20.0578V22.2542C25.8927 22.3519 25.8915 22.4549 25.8915 22.5631V31.4133V32.8883C25.8915 35.1613 25.7545 36.7733 25.4804 37.7244C25.1419 38.9012 24.4165 39.8523 23.3042 40.5777C22.208 41.3031 20.7732 41.6658 19 41.6658V41.1822C19.6771 41.1178 20.2332 40.9162 20.6685 40.5777C21.1198 40.2553 21.4584 39.7072 21.6841 38.9334C21.9259 38.1758 22.0468 37.136 22.0468 35.8141V22.5631C22.0468 21.9506 21.9984 21.5073 21.9017 21.2332C21.8211 20.9592 21.6518 20.7738 21.3939 20.6771C21.1521 20.5803 20.7652 20.5159 20.2332 20.4836V20C21.0392 20.0484 22.2563 20.0725 23.8845 20.0725ZM35.9535 37.1682L27.6167 26.6032V20.4241L36.6305 31.5342V23.9656C36.6305 23.0145 36.5822 22.3213 36.4855 21.8861C36.3887 21.4347 36.1792 21.1123 35.8568 20.9189C35.5343 20.7093 35.0104 20.5642 34.285 20.4836V20C34.9137 20.0484 35.7842 20.0725 36.8965 20.0725C37.7993 20.0725 38.5005 20.0484 39.0002 20V20.4836C38.4683 20.5642 38.0733 20.7012 37.8154 20.8947C37.5736 21.0881 37.4043 21.3944 37.3076 21.8135C37.227 22.2327 37.1867 22.8533 37.1867 23.6755V37.1682L36.6064 37.1441L35.9535 37.1682Z"
+          fill="white"
+        />
+      </svg>
+    </a>
+
+                    <button class="popup-toggle" data-target="popup"> <span class="icon-sound"></span>
+
+                    </button>
+                </div>
+                <div class="ml-6 w-full pt-1">
+                    <div class="flex justify-between w-full">
+                        <div class="flex items-center">
+                             <h5 class="text-xl font-serif relative"><b>My blog</b></h5>
+
+                            <p class="text-base ml-3">/ This blog is about technology, social and politic, i hope you like this
+                                blog.</p>
+                        </div>
+                        <form class="
+          border-2
+          mb-0
+          border-black border-solid
+          rounded-full
+          form-search
+          ml-auto
+          py-2
+          px-5
+          lg:w-80
+          flex
+          justify-between
+          items-center
+        ">
+                            <input class="w-full pr-3 bg-transparent border-none focus:outline-none"
+                            type="text" name="keyword" placeholder="Search" />
+                            <button><span class="icon-search"></span>
+
+                            </button>
+                        </form>
+                    </div>
+                    <div class="py-5 flex items-center"> <a class="text-black-1 mr-4" href="/blog.html"><span class="icon-square"></span></a>
+
+                        <a
+                        class="text-black-1 mr-7" href="/blog-lists.html"><span class="icon-list"></span>
+
+                            </a>
+                            <div class="select mr-7">
+                                <input type="hidden" name="browse_by" />
+                                <button class="font-serif select--toggle">Browse by <b class="select--value underline">Category</b>
+ <span class="icon-chevron-down icon"></span>
+
+                                </button>
+                                <ul class="select--options">
+                                    <li data-value="Category">Category</li>
+                                    <li data-value="Newsletter">Newsletter</li>
+                                </ul>
+                            </div>
+                            <div class="select mr-7">
+                                <input type="hidden" name="browse_by" />
+                                <button class="font-serif select--toggle">Interested in a particular topic <b class="select--value underline">topic</b>
+
+                                    <span
+                                    class="icon-chevron-down icon"></span>
+                                </button>
+                                <ul class="select--options ">
+                                    <li data-value="topic">topic</li>
+                                    <li data-value="topic 2">topic 2</li>
+                                </ul>
+                            </div>
+                            <div class="select">
+                                <input type="hidden" name="browse_by" />
+                                <button class="font-serif select--toggle">Sort by <b class="select--value underline">date</b>
+ <span class="icon-chevron-down icon"></span>
+
+                                </button>
+                                <ul class="select--options">
+                                    <li data-value="date">date</li>
+                                    <li data-value="alphabetical">alphabetical</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="blog lg:pl-42 md:pr-11 pr-7.5 pb-14">
+                <div class="blog--container">
+                    <div class="flex w-full">
+                        <div class="w-2/3 pr-14">
+                            <div class="blog-item--list flex mb-10">
+                                <div class="w-1/3 ">
+                                    <img src="/img/blog-list.png" class="w-full mt-12" alt="blog list" />
+                                </div>
+                                <div class="w-2/3 pl-14">
+                                    <div class="spiral mb-4">
+                                        <p class="font-serif text-base text-black-1"><b>Aug 26</b>
+                                        </p>
+                                    </div>
+                                     <h3 class="text-xl2 font-serif text-black-1 mb-4"><b>The Real Way to Figure Out How Smart Someone Is</b></h3>
+
+                                    <label class="label mr-2 bg-brown-300">Blockchain</label>
+                                    <label class="label bg-brown-300">Design</label>
+                                    <p class="mt-4 text-black-1 leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    <div
+                                    class="flex items-center mt-4 mb-4">
+                                        <p class="text-black flex items-center"><span class="icon-time text-xl mr-2"></span> 6 min read</p> <span class="dot mx-2"></span>
+
+                                        <p
+                                        class="text-black flex items-center"><span class="icon-clap text-xl mr-2"></span> 62k</p>
+                                </div> <a class="font-serif text-black-1 mt-4 border-spiral" href=""><b>Read more</b> <span class="icon-arrow-long-right text-xs ml-5"></span></a>
+
+                            </div>
+                        </div>
+                        <div class="blog-item--list flex mb-10">
+                            <div class="w-1/3 ">
+                                <img src="/img/blog-list.png" class="w-full mt-12" alt="blog list" />
+                            </div>
+                            <div class="w-2/3 pl-14">
+                                <div class="spiral mb-4">
+                                    <p class="font-serif text-base text-black-1"><b>Aug 26</b>
+                                    </p>
+                                </div>
+                                 <h3 class="text-xl2 font-serif text-black-1 mb-4"><b>The Real Way to Figure Out How Smart Someone Is</b></h3>
+
+                                <label class="label mr-2 bg-brown-300">Blockchain</label>
+                                <label class="label bg-brown-300">Design</label>
+                                <p class="mt-4 text-black-1 leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <div
+                                class="flex items-center mt-4 mb-4">
+                                    <p class="text-black flex items-center"><span class="icon-time text-xl mr-2"></span> 6 min read</p> <span class="dot mx-2"></span>
+
+                                    <p
+                                    class="text-black flex items-center"><span class="icon-clap text-xl mr-2"></span> 62k</p>
+                            </div> <a class="font-serif text-black-1 mt-4 border-spiral" href=""><b>Read more</b> <span class="icon-arrow-long-right text-xs ml-5"></span></a>
+
+                        </div>
+                    </div>
+                    <div class="blog-item--list flex ">
+                        <div class="w-1/3 ">
+                            <img src="/img/blog-list.png" class="w-full mt-12" alt="blog list" />
+                        </div>
+                        <div class="w-2/3 pl-14">
+                            <div class="spiral mb-4">
+                                <p class="font-serif text-base text-black-1"><b>Aug 26</b>
+                                </p>
+                            </div>
+                             <h3 class="text-xl2 font-serif text-black-1 mb-4"><b>The Real Way to Figure Out How Smart Someone Is</b></h3>
+
+                            <label class="label mr-2 bg-brown-300">Blockchain</label>
+                            <label class="label bg-brown-300">Design</label>
+                            <p class="mt-4 text-black-1 leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <div
+                            class="flex items-center mt-4 mb-4">
+                                <p class="text-black flex items-center"><span class="icon-time text-xl mr-2"></span> 6 min read</p> <span class="dot mx-2"></span>
+
+                                <p
+                                class="text-black flex items-center"><span class="icon-clap text-xl mr-2"></span> 62k</p>
+                        </div> <a class="font-serif text-black-1 mt-4 border-spiral" href=""><b>Read more</b> <span class="icon-arrow-long-right text-xs ml-5"></span></a>
+
+                    </div>
+                </div>
+                </div>
+                <div class="w-1/3">
+                    <img alt="illustration" class="w-full mt-20 illustration" src="/img/illustration.png"
+                    />
+                </div>
+                </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+        <script src="./js/scripts.js"></script>
+    </body>
+
+</html>
